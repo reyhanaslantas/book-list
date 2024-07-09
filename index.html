@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Listesi - To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kitap Listesi </h1>
+        <form id="kitapForm">
+            <input type="text" id="kitapAdi" placeholder="Kitap Adı" required>
+            <input type="text" id="yazarAdi" placeholder="Yazar Adı" required>
+            <button type="submit">Kitap Ekle</button>
+        </form>
+
+        <!-- Eklenen kitapların gösterildiği bölüm -->
+        <div id="eklenenKitaplar">
+            <h2>Eklenen Kitaplar</h2>
+            <ul id="eklenenKitaplarListesiUl"></ul>
+        </div>
+
+        <!-- Tüm kitapların gösterildiği bölüm -->
+        <div id="kitapListesi">
+            <h2>Tüm Kitaplar</h2>
+            <ul id="kitaplarListesiUl"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
